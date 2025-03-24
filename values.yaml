@@ -386,6 +386,8 @@ tls:
     # The name of this ServiceAccount to use.
     # If not set and `create` is `true`, then a name is auto-generated.
     name: ""
+    # Include image pull secret references. (Supports templating)
+    imagePullSecrets: []
   copyCerts:
     image: alpine
   certs:
